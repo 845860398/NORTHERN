@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+		<link rel="stylesheet" href="css/style.min.css">
+	    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		<!-- Mapbox -->
+	    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<!-- Datepicker -->
+		<link rel="stylesheet" href="plugins/jquery-ui-1.12.custom/jquery-ui.css">
+	
+</head>
+<body>
+
+<!-- Whole Container -->
+<div id="container">
+
+	<div class="flip3D">
+		<!-- This is the Splash page -->
+	 	<div id="splash">
+			<div class="background-image">
+				<img src="assets/images/tp.png" alt="BACKGROUND" style="width:100%;height:100%;">
+			</div>
+
+			<div>
+				<img class="logo-intro" src="assets/images/primary.png" alt="NORTHERN LOGO">
+				<button id="btn-intro" class="btn btn-outline-success">Discover</button>
+			</div>
+			
+			<div class="the-intro">
+				<h3 class="credit-intro">Designed by Jordan Paese</h3>
+				<h3 class="credit-intro">For Educational Purposes</h3>
+			</div>
+		</div>
+
+		<!-- This is the search section(bottom right) -->
+		<div id="section-search">
+			<i class="fa fa-map-marker"></i>
+				<input class="search-bar" type="text" name="search" placeholder="Search Outdoor Acommodations">
+		</div>
+
+		<!-- This is the logo -->
+		<div>
+			<a href="index.html"><img class="logo-map" id="logo-map" src="assets/images/primary.png" alt="NORTHERN LOGO"></a>
+		</div>
+
+
+
+		<!-- Garston -->
+		<div  id="page-open" class="item0"> 
+			<div class="page-details">
+				<p>Garston, New Zealand</p>
+					<h2>Open Wide Area for Picnic</h2>
+					<p>Self contained studio apartment, private access - overlooks the pool<br> one side, the sand dunes the other. The queen bed which faces the<br> dunes is separated from the living space by an open bookcase.<br> See the sun rise and set. There is sky TV, WiFi an off street parking. <br>Only suitable for two people.<br>
+			</div>
+
+			<!-- First Form -->
+			<div id="page-checkIn" class="front">
+				<i class="fa fa-times" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book" aria-hidden="true" style="font-size: 115px; position:absolute;left: 38%;top: 7%;"></i>
+
+						<h1 class="page-price">$30 NZD</h1>
+
+						<label class="page-label" for="input">Check In</label>
+							<p> <input type="text" id="datepickerA" class="page-input" value="dd-mm-yyyy"></p>
+
+						<label class="page-label2" for="input">Check Out</label>
+							<p> <input type="text" id="datepickerB" class="page-input2" value="dd-mm-yyyy"></p>
+
+
+						<label class="page-guests this-page-guests" for="guests">Guests</label>
+							<select name="daForm" class="guestCount" id="countGuestsG">
+								<option value="1 Guest">1 Guest</option>
+								<option value="2 Guests">2 Guests</option>
+								<option value="3 Guests">3 Guests</option>
+								<option value="4 Guests">4 Guests</option>
+								<option value="5 Guests">5 Guests</option>
+								<option value="6 Guests">6 Guests</option>
+							</select>
+					</form>
+				<button id="bookBtn" class="page-book-button" align="center">BOOK</button>
+				<p id="page-validG"></p>
+			</div>
+
+			<!-- Second Form -->
+			<div id="booking-page" class="back">
+				<i class="fa fa-times fa-ex" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book book-i" aria-hidden="true" style="font-size: 50px;"></i>
+						<p class="fee-font">Total</p>
+					</form>
+					<div class="booking-fee">
+						<p id="totalNightsG"></p>
+						<p id="totalGuestsG"></p>
+						<p id="totalCostG" style="position:absolute;right:-109%;bottom: -46%;font-size: 22px;font-weight: 500;"></p>
+					</div>
+				<button class="book-button" align="center">PROCEED BOOKING</button>
+			</div>
+		</div>
+
+
+
+		<!-- Queenstown -->
+		<div  id="page-open1" class="item1"> 
+			<div class="page-details1">
+				<p>Queenstown, New Zealand</p>
+					<h2>Great Outdoor Area With A View</h2>
+					<p>Self contained studio apartment, private access - overlooks the pool<br> one side, the sand dunes the other. The queen bed which faces the<br> dunes is separated from the living space by an open bookcase.<br> See the sun rise and set. There is sky TV, WiFi an off street parking. <br>Only suitable for two people.<br>
+
+					<br>The space<br>
+
+					<br>The studio is one space with the bed divided off by an open shelving unit.<br>
+					The size is 7.8 metres long by 5 metres wide. The studio is not the full house.<br>
+					There is a small BBQ, outdoor chairs, coffee table and umbrella outside your door for your use.<br>
+					</p>
+			</div>
+
+			<!-- First Form -->
+			<div id="page-checkIn" class="front">
+				<i class="fa fa-times" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book" aria-hidden="true" style="font-size: 115px; position:absolute;left: 38%;top: 7%;"></i>
+
+						<h1 class="page-price">$157 NZD</h1>
+
+						<label class="page-label" for="input">Check In</label>
+							<p> <input type="text" id="datepickerC" class="page-input" value="dd-mm-yyyy"></p>
+
+						<label class="page-label2" for="input">Check Out</label>
+							<p> <input type="text" id="datepickerD" class="page-input2" value="dd-mm-yyyy"></p>
+
+
+						<label class="page-guests this-page-guests" for="guests">Guests</label>
+							<select name="daForm" class="guestCount" id="countGuestsQ">
+								<option value="1 Guest ">1 Guest</option>
+								<option value="2 Guests">2 Guests</option>
+							</select>
+					</form>
+				<button id="bookBtn" class="page-book-button" align="center">BOOK</button>
+				<p id="page-validQ"></p>
+			</div>
+
+			<!-- Second Form -->
+			<div id="booking-page" class="back">
+				<i class="fa fa-times fa-ex" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book book-i" aria-hidden="true" style="font-size: 86px;"></i>
+						<p class="fee-font">Total</p>
+					</form>
+					<div class="booking-fee">
+						<p id="totalNightsQ"></p>
+						<p id="totalGuestsQ"></p>
+						<p id="totalCostQ" style="position:absolute;right:-109%;bottom: -46%;font-size: 22px;font-weight: 500;"></p>
+					</div>
+				<button class="book-button" align="center">PROCEED BOOKING</button>
+			</div>
+		</div>
+
+
+
+		<!-- Cromwell -->
+		<div  id="page-open2" class="item2"> 
+			<div class="page-details2">
+				<p>Cromwell, New Zealand</p>
+					<h2>Cromwell Outdoor Area</h2>
+					<p>Self contained studio apartment, private access - overlooks the pool<br> one side, the sand dunes the other. The queen bed which faces the<br> dunes is separated from the living space by an open bookcase.<br> See the sun rise and set. There is sky TV, WiFi an off street parking. <br>Only suitable for two people.<br>
+			</div>
+
+			<!-- First Form -->
+			<div id="page-checkIn" class="front">
+				<i class="fa fa-times" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book" aria-hidden="true" style="font-size: 115px; position:absolute;left: 38%;top: 7%;"></i>
+
+						<h1 class="page-price">$90 NZD</h1>
+
+						<label class="page-label" for="input">Check In</label>
+							<p> <input type="text" id="datepickerE" class="page-input" value="dd-mm-yyyy"></p>
+
+						<label class="page-label2" for="input">Check Out</label>
+							<p> <input type="text" id="datepickerF" class="page-input2" value="dd-mm-yyyy"></p>
+
+
+						<label class="page-guests this-page-guests" for="guests">Guests</label>
+							<select name="daForm" class="guestCount" id="countGuestsC">
+								<option value="2 Guests">2 Guests</option>
+								<option value="3 Guests">3 Guests</option>
+								<option value="4 Guests">4 Guests</option>
+							</select>
+					</form>
+				<button id="bookBtn" class="page-book-button" align="center">BOOK</button>
+				<p id="page-validC"></p>
+			</div>
+
+			<!-- Second Form -->
+			<div id="booking-page" class="back">
+				<i class="fa fa-times fa-ex" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book book-i" aria-hidden="true" style="font-size: 50px;"></i>
+						<p class="fee-font">Total</p>
+					</form>
+					<div class="booking-fee">
+						<p id="totalNightsC"></p>
+						<p id="totalGuestsC"></p>
+						<p id="totalCostC" style="position:absolute;right:-109%;bottom: -46%;font-size: 22px;font-weight: 500;"></p>
+					</div>
+				<button class="book-button" align="center">PROCEED BOOKING</button>
+			</div>
+		</div>
+
+
+
+		<!-- David Peaks -->
+		<div  id="page-open3" class="item3"> 
+			<div class="page-details3">
+				<p>David Peaks, New Zealand</p>
+					<h2>Big Pool and Lake and Great Outdoor Area for Kids</h2>
+					<p>Self contained studio apartment, private access - overlooks the pool<br> one side, the sand dunes the other. The queen bed which faces the<br> dunes is separated from the living space by an open bookcase.<br> See the sun rise and set. There is sky TV, WiFi an off street parking. <br>Only suitable for two people.<br>
+			</div>
+
+			<!-- First Form -->
+			<div id="page-checkIn" class="front">
+				<i class="fa fa-times" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book" aria-hidden="true" style="font-size: 115px; position:absolute;left: 38%;top: 7%;"></i>
+
+						<h1 class="page-price">$240 NZD</h1>
+
+						<label class="page-label" for="input">Check In</label>
+							<p> <input type="text" id="datepickerG" class="page-input" value="dd-mm-yyyy"></p>
+
+						<label class="page-label2" for="input">Check Out</label>
+							<p> <input type="text" id="datepickerH" class="page-input2" value="dd-mm-yyyy"></p>
+
+
+						<label class="page-guests this-page-guests" for="guests">Guests</label>
+							<select name="daForm" class="guestCount" id="countGuestsD">
+								<option value="1 Guest ">1 Guest</option>
+								<option value="2 Guests">2 Guests</option>
+								<option value="3 Guests">3 Guests</option>
+								<option value="4 Guests">4 Guests</option>
+							</select>
+					</form>
+				<button id="bookBtn" class="page-book-button" align="center">BOOK</button>
+				<p id="page-validD"></p>
+			</div>
+
+			<!-- Second Form -->
+			<div id="booking-page" class="back">
+				<i class="fa fa-times fa-ex" aria-hidden="true" style="font-size: x-large;padding: 17px;"></i>
+					<form class="page-form">
+						<i class="fa fa-book book-i" aria-hidden="true" style="font-size: 50px;"></i>
+						<p class="fee-font">Total</p>
+					</form>
+					<div class="booking-fee">
+						<p id="totalNightsD"></p>
+						<p id="totalGuestsD"></p>
+						<p id="totalCostD" style="position:absolute;right:-109%;bottom: -46%;font-size: 22px;font-weight: 500;"></p>
+					</div>
+				<button class="book-button" align="center">PROCEED BOOKING</button>
+			</div>
+		</div>
+	</div>
+	<!-- This is for all plugins -->
+	<div class="alrt" id='alrt'></div>
+	<div class="map" id="map"></div>
+</div>
+	<!-- Mapbox -->
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
+	<!-- Datepicker -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>		
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+	<script src="js/objects.js"></script>
+</body>
+</html>

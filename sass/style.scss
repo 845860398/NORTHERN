@@ -1,0 +1,524 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title-search{
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    left: 12px;
+    top: -4px;
+}
+
+.logo-intro{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    padding-top: 8%;
+}
+
+.btn{
+    margin: auto;
+    display: flex;
+    margin-top: 160px;
+    font-size: 24px;
+    border: none;
+}
+
+.logo-map{
+    width: 155px;
+    height: 86px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+}
+
+.btn-search{
+    border-radius: 0;
+    margin-left: -5.5px;
+    height: 19px;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.fee-font{
+    position: absolute;
+    bottom: 209px;
+    font-size: 25px;
+    font-weight: 400;
+    top: 20%;
+    left: 7%;
+}
+
+#totalCost{
+    position: absolute;
+    bottom: 215px;
+    font-size: larger;
+    font-weight: 400;
+}  
+
+.search-bar{
+    position: absolute;
+    width: 430px;
+    height: 40px;
+    background-color: #003611;
+    position: absolute;
+    top: 89%;
+    right: 1%;
+    z-index: 4;
+    border: none;
+    font-size: 16px;
+    text-indent: 45px;
+    color: white;
+}
+
+#section-search{
+    position: absolute;
+    z-index: 4;
+    left: 99%;
+    top: 92%;
+    font-size: 25px;
+}
+
+.background-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.fa-map-marker{
+    color: white;
+    content: "\f041";
+    position: absolute;
+    margin-left: -417px;
+    margin-top: 8px;
+    z-index: 11;
+    font-size: 27px;
+}
+
+.credit-intro{
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 8%;
+    color: white;
+}
+
+.the-intro{
+    text-align: center;
+    padding-top: 2%;
+}
+
+#alrt{
+    width: 450px;
+    height: 44px;
+    position: absolute;
+    z-index: 6;
+    color: black;
+    left: 41%;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 9px;
+    border-radius: 7px;
+    top: 22px;
+    text-align: center;
+}
+
+#splash{
+    position: absolute;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.marker {
+    background-image: url('../assets/images/logo.png');
+    background-size: cover;
+    width: 48px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.mapboxgl-marker {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+
+/*This is the opening page*/
+
+    #page-open, #page-open1, #page-open2, #page-open3 {
+        position: absolute;
+        z-index: 5;
+        background-color: #003611;
+        color: orange;
+        left: 40%;
+        top: 12%;
+        width: 60%;
+        padding: 276px 600px 32px 47px;
+        background-repeat: no-repeat;
+        background-size: 42% 50%;
+        background-position-x: 47px;
+        background-position-y: 48px;
+        background-image: url(../assets/images/extras/home1/house2.png);
+        display: none;
+    }
+
+    /* Garston */
+    #page-open {
+        position: absolute;
+        z-index: 5;
+        background-color: #003611;
+        color: orange;
+        left: 40%;
+        top: 12%;
+        width: 60%;
+        padding: 605px 600px 32px 47px;
+        background-repeat: no-repeat;
+        background-size: 42% 50%;
+        background-position-x: 47px;
+        background-position-y: 48px;
+        background-image: url(../assets/images/extras/home1/house2.png);
+        display: none;
+    }
+    
+    /* Queenstown */
+    #page-open1{
+        width: 60%;
+        padding: 276px 600px 32px 47px;
+        background-repeat: no-repeat;
+        background-size: 42%;
+        background-position-x: 47px;
+        background-position-y: 48px;
+        background-image: url(../assets/images/extras/home1/house1.jpg);
+        display: none;
+    }
+
+    /* Cromwell */
+    #page-open2{
+        width: 60%;
+        padding: 605px 600px 32px 47px;
+        background-repeat: no-repeat;
+        background-size: 42% 50%;
+        background-position-x: 47px;
+        background-position-y: 48px;
+        background-image: url(../assets/images/extras/home1/house.jpg);
+        display: none;
+    }
+
+    /* David Peaks */
+    #page-open3{
+        width: 60%;
+        padding: 320px 600px 32px 47px;
+        background-repeat: no-repeat;
+        background-size: 44%;
+        background-position-x: 47px;
+        background-position-y: 48px;
+        background-image: url(../assets/images/extras/home1/house4.jpg);
+        display: none;
+    }
+
+    .page-details{
+        margin-top: 20%;
+        position: absolute;
+        top: 25%;
+    }
+
+    .page-details2{
+        margin-top: 15%;
+        position: absolute;
+        top: 34%;
+    }
+
+    .page-details3{
+        padding-top: 10%;
+        padding-bottom: 7%;
+    }
+
+    #page-checkIn{
+        background-color: darkgreen;
+        width: 440px;
+        height: 545px;
+        position: absolute;
+        left: 646px;
+        top: 48px;
+        border-radius: 20px;
+    }
+
+    .fa-times{
+        float: right;
+    }
+
+    #page-validQ{
+        text-align: center;
+        padding-top: 16%;
+        color: red;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    #page-validG{
+        text-align: center;
+        padding-top: 16%;
+        color: red;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    #page-validC{
+        text-align: center;
+        padding-top: 16%;
+        color: red;
+        font-size: 14px;
+        font-weight: bolder;        
+    }
+
+    #page-validD{
+        text-align: center;
+        padding-top: 16%;
+        color: red;
+        font-size: 14px;
+        font-weight: bolder;        
+    }
+
+    .page-form{
+        text-align: center;
+        padding-top: 65px;
+    }
+
+    .page-label{
+        position: absolute;
+        top: 41%;
+        left: 7%;
+        height: 19%;
+        font-size: 20px;
+        font-weight: bold;
+        z-index: 0;
+    }
+
+    .page-label2{
+        position: absolute;
+        top: 41%;
+        right: 26%;
+        height: 19%;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -22px;
+        z-index: 0;
+    }
+
+    .page-book-button{
+        background-color: orange;
+        width: 36%;
+        height: 9%;
+        font-size: 21px;
+        color: aliceblue;
+        border-style: none;
+        display: inline-block;
+        position: absolute;
+        left: 32%;
+        bottom: 7%;
+    }
+
+    .page-price{
+        font-size: 35px;
+        font-weight: bolder;
+        text-align: center;
+        padding-top: 18%;
+    }
+
+    .page-guests{
+        position: absolute;
+        left: 7%;
+        bottom: 37%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .guestCount{
+        position: absolute;
+        bottom: 29%;
+        border-style: none;
+        width: 86%;
+        height: 8%;
+        left: 29px;
+    }
+
+    .page-input{
+        margin-top: 10%;
+        border-style: none; 
+        padding: 2%;
+        width: 41%;
+        border-radius: 5px;
+        margin-left: -43%;
+        z-index: 6;
+        position: absolute;
+    }
+
+    .page-input2{
+        margin-top: 10%;
+        border-style: none; 
+        padding: 2%;
+        width: 41%;
+        border-radius: 5px;
+        margin-left: 1%;
+        position: absolute;
+        top: 212px;
+        z-index: 8;
+    }
+
+/*opening page ends*/
+
+
+
+/*Booking page starts*/
+
+    #booking-page{
+        background-color: darkgreen;
+        width: 440px;
+        height: 545px;
+        position: absolute;
+        left: 646px;
+        top: 48px;  
+        border-radius: 20px;      
+    }
+
+    .book-i{
+        position: absolute;
+        top: 15px;
+        left: 28px;       
+    }
+
+    .booking-email-label{
+        position: absolute;
+        top: 14%;
+        left: 6%;
+        font-size: 15px;
+        font-weight: 500;
+        z-index: 0;
+    }
+
+    .booking-label{
+        position: absolute;
+        top: 27%;
+        font-size: 17px;
+        font-weight: 500;
+        margin-right: 21px;
+        z-index: 0;
+    }
+
+    .booking-email-input{
+        margin-top: 9%;
+        border-style: none;
+        padding: 1%;
+        width: 86%;
+        margin-left: -1%;
+        border-radius: 3px;
+    }
+
+    .booking-input{
+        margin-top: 10%;
+        border-style: none; 
+        padding: 2%;
+        width: 41%;
+        border-radius: 5px;
+        margin-left: -43%;
+        z-index: 6;
+        position: absolute;
+    }
+
+    .booking-input2{
+        margin-top: 10%;
+        border-style: none; 
+        padding: 2%;
+        width: 41%;
+        border-radius: 5px;
+        margin-left: 1%;
+        position: absolute;
+        z-index: 8;
+        margin-top: 34px;
+    }
+
+
+    .booking-guests{
+        top: 41%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .booking-count{
+        position: absolute;
+        bottom: 46%;
+        width: 86%;
+        height: 7%;   
+    }
+
+    .book-button{
+
+        background-color: orange;
+        width: 54%;
+        height: 9%;
+        font-size: 21px;
+        color: white;
+        border-style: none;
+        display: inline-block;
+        position: absolute;
+        left: 22%;
+        bottom: 7%;  
+    }
+
+    .booking-fee{
+        position: absolute;
+        left: 7%;
+        bottom: 37%;
+        font-size: 17px;
+        font-weight: 200;    
+    }
+
+/*booking page ends*/
+
+/*form flip animation starts*/
+
+    .flip3D .front {
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);
+        background: sandybrown;
+        width: 240px;
+        height: 200px;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+    .flip3D .back {
+        position: absolute;
+        transform: perspective(600px) rotateY(180deg);
+        background: aqua;
+        width: 240px;
+        height: 200px;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+/*form flip animation ends*/
+
+
+
